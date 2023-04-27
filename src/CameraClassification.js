@@ -209,30 +209,30 @@ function CameraClassification() {
 
   return (
     <div>
-      <div>
-        <video
-          ref={videoRef}
-          width={tamano}
-          height={tamano}
-          style={{ transform: "scaleX(-1)" }}
-          playsInline
-          autoPlay
-          muted
-        ></video>
-        <canvas ref={canvasRef} width={tamano} height={tamano}></canvas>
-        <canvas
-          ref={otrocanvasRef}
-          width={100}
-          height={100}
-          style={{ display: "none" }}
-        ></canvas>
-      </div>
-      <div>
-        <button onClick={cambiarCamara}>Cambiar cámara</button>
-        <div ref={resultadoRef}></div>
-      </div>
+    <div>
+    <video
+    ref={videoRef}
+    width={tamano}
+    height={tamano}
+    style={{ transform: "scaleX(-1)" }}
+    playsInline
+    autoPlay
+    muted
+    ></video>
+    <canvas ref={canvasRef} width={tamano} height={tamano}style={{ display: "none" }}></canvas>
+    <canvas
+    ref={otrocanvasRef}
+    width={100}
+    height={100}
+    style={{ display: "none" }}
+    ></canvas>
     </div>
-  );
+    <div>
+    <button onClick={cambiarCamara}>Cambiar cámara</button>
+    <div ref={resultadoRef}></div>
+    </div>
+    </div>
+    );
 }
 
 export default CameraClassification;
