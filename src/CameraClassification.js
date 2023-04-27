@@ -22,7 +22,7 @@ function CameraClassification() {
         });
       }
     };
-  }, []);
+  }, );
 
   async function cargarModelo() {
     console.log("Cargando modelo...");
